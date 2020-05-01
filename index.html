@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Technical Documentation Page</title>
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+<body>
+<div id="container">
+	<div id="left-content">
+		
+		<div id="left-content-top">
+			
+		</div>
+
+		<div id="left-content-bottom">
+			<nav id="navbar">
+				<header><h3>TypeScript Documentation</h3></header>
+				<a class="nav-link" href="#TypeScript_Overview">TypeScript Overview</a>
+				<a class="nav-link" href="#What_is_TypeScript">What is TypeScript</a>
+				<a class="nav-link" href="#Features_of_TypeScript">Features of TypeScript</a>
+				<a class="nav-link" href="#Why_Use_TypeScript">Why Use TypeScript</a>
+				<a class="nav-link" href="#Components_of_TypeScript">Components of TypeScript</a>
+				<a class="nav-link" href="#TypeScript_Environment_Setup">TypeScript Environment Setup</a>
+				<a class="nav-link" href="#TypeScript_Basic_Syntax">TypeScript Basic Syntax</a>
+				<a class="nav-link" href="#Your_First_TypeScript_Code">Your First TypeScript Code</a>
+				<a class="nav-link" href="#TypeScript_Variables">TypeScript Variables</a>
+				<a class="nav-link" href="#Variable_Declaration_in_TypeScript">Variable Declaration in TypeScript</a>
+				<a class="nav-link" href="#Type_Assertion_in_TypeScript">Type Assertion in TypeScript</a>
+				<a class="nav-link" href="#Inferred_Typing_in_TypeScript">Inferred Typing in TypeScript</a>
+				<a class="nav-link" href="#TypeScript_Variable_Scope">TypeScript Variable Scope</a>
+				<a class="nav-link" href="#TypeScript_Operators">TypeScript Operators</a>
+				<a class="nav-link" href="#Reference">Reference</a>
+			</nav>
+		</div>
+	</div>
+
+	<div id="right-content">
+		<main id="main-doc">
+			<section class="main-section" id="TypeScript_Overview">
+				<header> <h1>TypeScript Overview</h1> </header>
+				<article>
+					<p>JavaScript was introduced as a language for the client side. The development of Node.js has marked JavaScript as an emerging server-side technology too. However, as JavaScript code grows, it tends to get messier, making it difficult to maintain and reuse the code. Moreover, its failure to embrace the features of Object Orientation, strong type checking and compile-time error checks prevents JavaScript from succeeding at the enterprise level as a full-fledged server-side technology. TypeScript was presented to bridge this gap.</p>
+				</article>
+				
+			</section>
+			
+			<section class="main-section" id="What_is_TypeScript">
+				<header> <h1>What is TypeScript</h1> </header>
+				<article>
+					<p>By definition, “TypeScript is JavaScript for application-scale development.”
+TypeScript is a strongly typed, object oriented, compiled language. It was designed by Anders Hejlsberg (designer of C#) at Microsoft. TypeScript is both a language and a set of tools. TypeScript is a typed superset of JavaScript compiled to JavaScript. In other words, TypeScript is JavaScript plus some additional features.
+</p>
+				</article>
+				
+			</section>
+
+			<section class="main-section" id="Features_of_TypeScript">
+				<header> <h1>Features of TypeScript</h1> </header>
+				<article>
+					<p><strong>TypeScript is just JavaScript</strong>. TypeScript starts with JavaScript and ends with JavaScript. Typescript adopts the basic building blocks of your program from JavaScript. Hence, you only need to know JavaScript to use TypeScript. All TypeScript code is converted into its JavaScript equivalent for the purpose of execution.</p>
+
+					<p><strong>TypeScript supports other JS libraries</strong>. Compiled TypeScript can be consumed from any JavaScript code. TypeScript-generated JavaScript can reuse all of the existing JavaScript frameworks, tools, and libraries.</p>
+
+					<p><strong>JavaScript is TypeScript</strong>. This means that any valid .js file can be renamed to .ts and compiled with other TypeScript files.</p>
+
+					<p><strong>TypeScript is portable</strong>. TypeScript is portable across browsers, devices, and operating systems. It can run on any environment that JavaScript runs on. Unlike its counterparts, TypeScript doesn’t need a dedicated VM or a specific runtime environment to execute.</p>
+				</article>
+				
+			</section>
+
+			<section class="main-section" id="Why_Use_TypeScript">
+				<header> <h1>Why Use TypeScript</h1> </header>
+				<article>
+					<p>TypeScript is superior to its other counterparts like CoffeeScript and Dart programming languages in a way that TypeScript is extended JavaScript. In contrast, languages like Dart, CoffeeScript are new languages in themselves and require language-specific execution environment.</p>
+					<p>The benefits of TypeScript include −</p>
+					<ul>
+						<li><strong>Compilation</strong> − JavaScript is an interpreted language. Hence, it needs to be run to test that it is valid. It means you write all the codes just to find no output, in case there is an error. Hence, you have to spend hours trying to find bugs in the code. The TypeScript transpiler provides the error-checking feature. TypeScript will compile the code and generate compilation errors, if it finds some sort of syntax errors. This helps to highlight errors before the script is run.</li>
+						<li><strong>Strong Static Typing</strong> − JavaScript is not strongly typed. TypeScript comes with an optional static typing and type inference system through the TLS (TypeScript Language Service). The type of a variable, declared with no type, may be inferred by the TLS based on its value.</li>
+						<li>TypeScript <strong>supports type definitions</strong> for existing JavaScript libraries. TypeScript Definition file (with .d.ts extension) provides definition for external JavaScript libraries. Hence, TypeScript code can contain these libraries.</li>
+						<li>TypeScript <strong>supports Object Oriented Programming</strong> concepts like classes, interfaces, inheritance, etc.</li>
+						
+					</ul>
+				</article>
+				
+			</section>
+
+			<section class="main-section" id="Components_of_TypeScript">
+				<header> <h1>Components of TypeScript</h1> </header>
+				<p>At its heart, TypeScript has the following three components −</p>
+				<ul>
+					<li><strong>Language</strong> − It comprises of the syntax, keywords, and type annotations.</li>
+					<li><strong>The TypeScript Compiler</strong> − The TypeScript compiler (tsc) converts the instructions written in TypeScript to its JavaScript equivalent.</li>
+					<li><strong>The TypeScript Language Service</strong> − The "Language Service" exposes an additional layer around the core compiler pipeline that are editor-like applications. The language service supports the common set of a typical editor operations like statement completions, signature help, code formatting and outlining, colorization, etc.</li>
+				</ul>
+				
+			</section>
+
+			<section class="main-section" id="TypeScript_Environment_Setup">
+				<header> <h1>TypeScript Environment Setup</h1> </header>
+				<h2>Local Environment Setup</h2>
+				<article>
+					<p>Typescript is an Open Source technology. It can run on any browser, any host, and any OS. You will need the following tools to write and test a Typescript program −</p>
+				<h2>A Text Editor</h2>
+				<p>The text editor helps you to write your source code. Examples of a few editors include Windows Notepad, Notepad++, Emacs, vim or vi, etc. Editors used may vary with Operating Systems.</p>
+				<p>The source files are typically named with the extension <strong>.ts</strong></p>
+				<h2>The TypeScript Compiler</h2>
+				<p>The TypeScript compiler is itself a .ts file compiled down to JavaScript (.js) file. The TSC (TypeScript Compiler) is a source-to-source compiler (transcompiler / transpiler)</p>
+				</article>
+			</section>
+
+			<section class="main-section" id="TypeScript_Basic_Syntax">
+				<header> <h1>TypeScript Basic Syntax</h1> </header>
+				<article>
+					<p>Syntax defines a set of rules for writing programs. Every language specification defines its own syntax. A TypeScript program is composed of −</p>
+					<ul>
+						<li>Modules</li>
+						<li>Functions</li>
+						<li>Variables</li>
+						<li>Statements and Expressions</li>
+						<li>Comments</li>
+					</ul>
+				</article>
+				
+			</section>
+
+			<section class="main-section" id="Your_First_TypeScript_Code">
+				<header> <h1>Your First TypeScript Code</h1> </header>
+				<article>
+					<p>Let us start with the traditional “Hello World” example −</p>
+					<code><p>var message:string = "Hello World"</p> 
+						<p>console.log(message)</p>
+</code>
+<p>On compiling, it will generate following JavaScript code.</p>
+<code>
+	<p>//Generated by typescript 1.8.10
+</p>
+<p>var message = "Hello World";
+</p>
+<p>console.log(message);</p>
+</code>
+<ul>
+	<li>Line 1 declares a variable by the name message. Variables are a mechanism to store values in a program.</li>
+	<li>Line 2 prints the variable’s value to the prompt. Here, console refers to the terminal window. The function log () is used to display text on the screen.</li>
+</ul>
+				</article>
+				
+			</section>
+
+			<section class="main-section" id="TypeScript_Variables">
+				<header> <h1>TypeScript Variables</h1> </header>
+				<article>
+					<p>A variable, by definition, is “a named space in the memory” that stores values. In other words, it acts as a container for values in a program. TypeScript variables must follow the JavaScript naming rules −</p>
+					<ul>
+						<li>Variable names can contain alphabets and numeric digits.</li>
+						<li>They cannot contain spaces and special characters, except the underscore (_) and the dollar ($) sign.</li>
+						<li>Variable names cannot begin with a digit.</li>
+					</ul>
+					<p>A variable must be declared before it is used. Use the var keyword to declare variables.</p>
+				</article>
+				
+			</section>
+
+			<section class="main-section" id="Variable_Declaration_in_TypeScript">
+				<header> <h1>Variable Declaration in TypeScript</h1> </header>
+				<article>
+					<p>The type syntax for declaring a variable in TypeScript is to include a colon (:) after the variable name, followed by its type. Just as in JavaScript, we use the var keyword to declare a variable.</p>
+					<code>
+						<p>var name:string = "John";</p> 
+<p>var score1:number = 50;</p>
+<p>var score2:number = 42.50</p>
+<p>var sum = score1 + score2</p> 
+<p>console.log("name"+name) </p>
+<p>console.log("first score: "+score1)</p> 
+<p>console.log("second score: "+score2) </p>
+<p>console.log("sum of the scores: "+sum)</p>
+
+					</code>
+					<p>On compiling, it will generate following JavaScript code.</p>
+					<code>
+						<p>//Generated by typescript 1.8.10</p>
+						<p>var name = "John";</p>
+						<p>var score1 = 50;</p>
+						<p>var score2 = 42.50;</p>
+						<p>var sum = score1 + score2;</p>
+						<p>console.log("name" + name);</p>
+						<p>console.log("first score: " + score1);</p>
+						<p>console.log("second score : " + score2);</p>
+						<p>console.log("sum of the scores: " + sum);</p>
+
+					</code>
+					<p>The output of the above program is given below −</p>
+					<code>
+						<p>name:John </p>
+						<p>first score:50 </p>
+						<p>second score:42.50 </p>
+						<p>sum of the scores:92.50</p>
+
+					</code>
+					<p>The TypeScript compiler will generate errors, if we attempt to assign a value to a variable that is not of the same type. Hence, TypeScript follows Strong Typing. The Strong typing syntax ensures that the types specified on either side of the assignment operator (=) are the same. This is why the following code will result in a compilation error −</p>
+					<code>
+						<p>var num:number = "hello"     // will result in a compilation error</p>
+					</code>
+				</article>
+				
+			</section>
+
+			<section class="main-section" id="Type_Assertion_in_TypeScript">
+				<header> <h1>Type Assertion in TypeScript</h1> </header>
+				<article>
+					<p>TypeScript allows changing a variable from one type to another. TypeScript refers to this process as Type Assertion. The syntax is to put the target type between < > symbols and place it in front of the variable or expression. The following example explains this concept −</p>
+					<p>Example</p>
+					<code>
+						<p>var str = '1'</p> 
+<p>var str2:number = <number> <any> str   //str is now of type number</p> 
+<p>console.log(typeof(str2))</p>
+
+					</code>
+					<p>If you hover the mouse pointer over the type assertion statement in Visual Studio Code, it displays the change in the variable’s data type. Basically it allows the assertion from type S to T succeed if either S is a subtype of T or T is a subtype of S.</p>
+					<p>The reason why it's not called "type casting" is that casting generally implies some sort of runtime support while, “type assertions” are purely a compile time construct and a way for you to provide hints to the compiler on how you want your code to be analyzed.</p>
+					<p>On compiling, it will generate following JavaScript code.</p>
+					<code>
+						<p>"use strict";</p>
+						<p>var str = '1';</p>
+						<p>var str2 = str; //str is now of type number </p>
+						<p>console.log(typeof (str2));</p>
+					</code>
+					<p>It will produce the following output −</p>
+					<code>
+						<p>string</p>
+					</code>
+				</article>
+				
+			</section>
+
+			<section class="main-section" id="Inferred_Typing_in_TypeScript">
+				<header> <h1>Inferred Typing in TypeScript</h1> </header>
+				<article>
+					<p>Given the fact that, Typescript is strongly typed, this feature is optional. TypeScript also encourages dynamic typing of variables. This means that, TypeScript encourages declaring a variable without a type. In such cases, the compiler will determine the type of the variable on the basis of the value assigned to it. TypeScript will find the first usage of the variable within the code, determine the type to which it has been initially set and then assume the same type for this variable in the rest of your code block.</p>
+					<p>The same is explained in the following code snippet −</p>
+					<p>Example: Inferred Typing</p>
+					<code>
+						<p>var num = 2;    // data type inferred as  number </p>
+						<p>console.log("value of num "+num); </p>
+						<p>num = "12";</p>
+						<p>console.log(num);</p>
+					</code>
+					<p>In the above code snippet −</p>
+					<ul>
+						<li>The code declares a variable and sets its value to 2. Note that the variable declaration doesn’t specify the data type. Hence, the program uses inferred typing to determine the data type of the variable, i.e., it assigns the type of the first value that the variable is set to. In this case, <strong>num</strong> is set to the type number.</li>
+						<li>When the code tries to set the variable’s value to string. The compiler throws an error as the variable’s type is already set to number.</li>
+					</ul>
+					<p>It will produce the following output −</p>
+					<code><p>error TS2011: Cannot convert 'string' to 'number'.</p></code>
+				</article>
+				
+			</section>
+
+			<section class="main-section" id="TypeScript_Variable_Scope">
+				<header> <h1>TypeScript Variable Scope</h1> </header>
+				<article>
+					<p>The scope of a variable specifies where the variable is defined. The availability of a variable within a program is determined by its scope. TypeScript variables can be of the following scopes −</p>
+					<ul>
+						<li><strong>Global Scope</strong> − Global variables are declared outside the programming constructs. These variables can be accessed from anywhere within your code.</li>
+						<li><strong>Class Scope</strong> − These variables are also called <strong>fields</strong>. Fields or class variables are declared within the class but outside the methods. These variables can be accessed using the object of the class. Fields can also be static. Static fields can be accessed using the class name.</li>
+						<li><strong>Local Scope</strong> − Local variables, as the name suggests, are declared within the constructs like methods, loops etc. Local variables are accessible only within the construct where they are declared.</li>
+					</ul>
+					<p>The following example illustrates variable scopes in TypeScript.</p>
+					<code>
+						var global_num = 12          //global variable <br>
+class Numbers { <br>
+   num_val = 13;             //class variable <br>
+   static sval = 10;         //static field <br>
+   
+   storeNum():void { <br>
+      var local_num = 14;    //local variable <br>
+   } <br>
+} <br>
+console.log("Global num: "+global_num)<br>  
+console.log(Numbers.sval)   //static variable  <br>
+var obj = new Numbers(); <br>
+console.log("Global num: "+obj.num_val) 
+
+					</code>
+					<p>On transpiling, the following JavaScript code is generated −</p>
+					<code>
+						var global_num = 12;              //global variable <br>
+var Numbers = (function () {<br>
+   function Numbers() {<br>
+      this.num_val = 13;          //class variable <br>
+   }
+   Numbers.prototype.storeNum = function () {<br>
+      var local_num = 14;        //local variable <br>
+   };<br>
+   Numbers.sval = 10;            //static field <br>
+   return Numbers;<br>
+}());<br>
+
+console.log("Global num: " + global_num);<br>
+console.log(Numbers.sval);       //static variable  <br>
+
+var obj = new Numbers();<br>
+console.log("Global num: " + obj.num_val);<br>
+
+					</code>
+					<p>It will produce the following output −</p>
+					<code>
+						Global num: 12<br>
+10<br>
+Global num: 13<br>
+
+					</code>
+					<p>If you try accessing the local variable outside the method, it results in a compilation error.</p>
+					<code>
+						error TS2095: Could not find symbol 'local_num'
+					</code>
+				</article>
+				
+			</section>
+
+			<section class="main-section" id="TypeScript_Operators">
+				<header> <h1>TypeScript Operators</h1> </header>
+				<article>
+					<h2>What is an Operator?</h2>
+					<p>An operator defines some function that will be performed on the data. The data on which operators work are called operands. Consider the following expression −</p>
+					<p><strong>7 + 5 = 12</strong></p>
+					<p>Here, the values 7, 5, and 12 are operands, while + and = are operators.
+The major operators in TypeScript can be classified as −
+</p>
+<ul>
+	<li>Arithmetic operators</li>
+	<li>Logical operators</li>
+	<li>Relational operators</li>
+	<li>Bitwise operators</li>
+	<li>Assignment operators</li>
+	<li>Ternary/conditional operator</li>
+	<li>String operator</li>
+	<li>Type Operator</li>
+</ul>
+				</article>
+				
+			</section>
+
+			<section class="main-section" id="Reference">
+				<header> <h1>Reference</h1> </header>
+				<ul>
+					<li>All the documentation in this page is taken from <a href="https://www.tutorialspoint.com/typescript/index.htm">Tutorials Point</a></li>
+				</ul>
+				
+			</section>
+		</main>
+		
+	</div>
+</div>
+</body>
+</html>
